@@ -30,53 +30,92 @@
         {
             this.personalInformationFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.schoolPanel = new System.Windows.Forms.Panel();
+            this.schoolErrorLabel = new System.Windows.Forms.Label();
             this.schoolTextBox = new System.Windows.Forms.TextBox();
             this.schoolLabel = new System.Windows.Forms.Label();
             this.departmentPanel = new System.Windows.Forms.Panel();
+            this.departmentErrorLabel = new System.Windows.Forms.Label();
             this.departmentLabel = new System.Windows.Forms.Label();
             this.departmentComboBox = new System.Windows.Forms.ComboBox();
             this.studentIDPanel = new System.Windows.Forms.Panel();
+            this.studentIDErrorLabel = new System.Windows.Forms.Label();
             this.studentIDLabel = new System.Windows.Forms.Label();
             this.studentIDTextBox = new System.Windows.Forms.TextBox();
             this.namePanel = new System.Windows.Forms.Panel();
+            this.nameErrorLabel = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.sexPanel = new System.Windows.Forms.Panel();
+            this.sexErrorLabel = new System.Windows.Forms.Label();
             this.sexLabel = new System.Windows.Forms.Label();
             this.sexComboBox = new System.Windows.Forms.ComboBox();
             this.birthdayPanel = new System.Windows.Forms.Panel();
+            this.birthdayErrorLabel = new System.Windows.Forms.Label();
             this.birthdayLabel = new System.Windows.Forms.Label();
             this.birthdayYearComboBox = new System.Windows.Forms.ComboBox();
             this.birthdayYearLabel = new System.Windows.Forms.Label();
             this.birthdayMonthComboBox = new System.Windows.Forms.ComboBox();
             this.birthdayMonthLabel = new System.Windows.Forms.Label();
             this.politicPanel = new System.Windows.Forms.Panel();
+            this.politicErrorLabel = new System.Windows.Forms.Label();
             this.politicLabel = new System.Windows.Forms.Label();
             this.politicComboBox = new System.Windows.Forms.ComboBox();
             this.nationalPanel = new System.Windows.Forms.Panel();
+            this.notionalErrorLabel = new System.Windows.Forms.Label();
             this.nationalLabel = new System.Windows.Forms.Label();
             this.nationalComboBox = new System.Windows.Forms.ComboBox();
             this.enterTimePanel = new System.Windows.Forms.Panel();
+            this.enterTimeErrorLabel = new System.Windows.Forms.Label();
             this.enterTimeLabel = new System.Windows.Forms.Label();
             this.enterYearComboBox = new System.Windows.Forms.ComboBox();
             this.enterYearLabel = new System.Windows.Forms.Label();
             this.enterMonthComboBox = new System.Windows.Forms.ComboBox();
             this.enterMonthLabel = new System.Windows.Forms.Label();
             this.professionPanel = new System.Windows.Forms.Panel();
+            this.professionErrorLabel = new System.Windows.Forms.Label();
             this.professionLabel = new System.Windows.Forms.Label();
             this.professionTextBox = new System.Windows.Forms.TextBox();
             this.yearsPanel = new System.Windows.Forms.Panel();
+            this.yearsErrorLabel = new System.Windows.Forms.Label();
             this.yearsLabel = new System.Windows.Forms.Label();
             this.yearsComboBox = new System.Windows.Forms.ComboBox();
             this.phonePanel = new System.Windows.Forms.Panel();
+            this.phoneErrorLabel = new System.Windows.Forms.Label();
             this.phoneLabel = new System.Windows.Forms.Label();
             this.phoneTextBox = new System.Windows.Forms.TextBox();
             this.IDPanel = new System.Windows.Forms.Panel();
+            this.IDErrorLabel = new System.Windows.Forms.Label();
             this.IDLabel = new System.Windows.Forms.Label();
             this.IDTextBox = new System.Windows.Forms.TextBox();
             this.clientFromTabControl = new System.Windows.Forms.TabControl();
             this.firstPage = new System.Windows.Forms.TabPage();
+            this.StudyFlowLayout = new System.Windows.Forms.FlowLayoutPanel();
+            this.professionSumPanel = new System.Windows.Forms.Panel();
+            this.professionSumErrorLabel = new System.Windows.Forms.Label();
+            this.professionSumTextBox = new System.Windows.Forms.TextBox();
+            this.professionSumLabel = new System.Windows.Forms.Label();
+            this.markPositionPanel = new System.Windows.Forms.Panel();
+            this.markPostionErrorLabel = new System.Windows.Forms.Label();
+            this.markPostionLabelTextBox = new System.Windows.Forms.TextBox();
+            this.markPositionLabel = new System.Windows.Forms.Label();
+            this.isEstimationPanel = new System.Windows.Forms.Panel();
+            this.isEstimationErrorLabel = new System.Windows.Forms.Label();
+            this.isEstimationLabel = new System.Windows.Forms.Label();
+            this.isEstimationComboBox = new System.Windows.Forms.ComboBox();
+            this.estimationPanel = new System.Windows.Forms.Panel();
+            this.estimationErrorLabel = new System.Windows.Forms.Label();
+            this.estimationTextBox = new System.Windows.Forms.TextBox();
+            this.estimationLabel = new System.Windows.Forms.Label();
+            this.coursePanel = new System.Windows.Forms.Panel();
+            this.courseErrorLabel = new System.Windows.Forms.Label();
+            this.courseTextBox = new System.Windows.Forms.TextBox();
+            this.courseLabel = new System.Windows.Forms.Label();
+            this.passPanel = new System.Windows.Forms.Panel();
+            this.passErrorLabel = new System.Windows.Forms.Label();
+            this.passTextBox = new System.Windows.Forms.TextBox();
+            this.passLabel = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.firstPageFlowLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.personalInformationFlowLayoutPanel.SuspendLayout();
             this.schoolPanel.SuspendLayout();
             this.departmentPanel.SuspendLayout();
@@ -93,14 +132,22 @@
             this.IDPanel.SuspendLayout();
             this.clientFromTabControl.SuspendLayout();
             this.firstPage.SuspendLayout();
+            this.StudyFlowLayout.SuspendLayout();
+            this.professionSumPanel.SuspendLayout();
+            this.markPositionPanel.SuspendLayout();
+            this.isEstimationPanel.SuspendLayout();
+            this.estimationPanel.SuspendLayout();
+            this.coursePanel.SuspendLayout();
+            this.passPanel.SuspendLayout();
+            this.firstPageFlowLayout.SuspendLayout();
             this.SuspendLayout();
             // 
             // personalInformationFlowLayoutPanel
             // 
-            this.personalInformationFlowLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.personalInformationFlowLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.personalInformationFlowLayoutPanel.AutoSize = true;
+            this.personalInformationFlowLayoutPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.personalInformationFlowLayoutPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.personalInformationFlowLayoutPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.personalInformationFlowLayoutPanel.Controls.Add(this.schoolPanel);
@@ -116,19 +163,28 @@
             this.personalInformationFlowLayoutPanel.Controls.Add(this.yearsPanel);
             this.personalInformationFlowLayoutPanel.Controls.Add(this.phonePanel);
             this.personalInformationFlowLayoutPanel.Controls.Add(this.IDPanel);
-            this.personalInformationFlowLayoutPanel.Location = new System.Drawing.Point(6, 6);
+            this.personalInformationFlowLayoutPanel.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.personalInformationFlowLayoutPanel.Location = new System.Drawing.Point(3, 3);
             this.personalInformationFlowLayoutPanel.Name = "personalInformationFlowLayoutPanel";
-            this.personalInformationFlowLayoutPanel.Size = new System.Drawing.Size(819, 154);
+            this.personalInformationFlowLayoutPanel.Size = new System.Drawing.Size(865, 210);
             this.personalInformationFlowLayoutPanel.TabIndex = 0;
             // 
             // schoolPanel
             // 
+            this.schoolPanel.Controls.Add(this.schoolErrorLabel);
             this.schoolPanel.Controls.Add(this.schoolTextBox);
             this.schoolPanel.Controls.Add(this.schoolLabel);
             this.schoolPanel.Location = new System.Drawing.Point(3, 3);
             this.schoolPanel.Name = "schoolPanel";
-            this.schoolPanel.Size = new System.Drawing.Size(200, 31);
+            this.schoolPanel.Size = new System.Drawing.Size(200, 46);
             this.schoolPanel.TabIndex = 32;
+            // 
+            // schoolErrorLabel
+            // 
+            this.schoolErrorLabel.Location = new System.Drawing.Point(58, 28);
+            this.schoolErrorLabel.Name = "schoolErrorLabel";
+            this.schoolErrorLabel.Size = new System.Drawing.Size(135, 12);
+            this.schoolErrorLabel.TabIndex = 2;
             // 
             // schoolTextBox
             // 
@@ -150,12 +206,20 @@
             // 
             // departmentPanel
             // 
+            this.departmentPanel.Controls.Add(this.departmentErrorLabel);
             this.departmentPanel.Controls.Add(this.departmentLabel);
             this.departmentPanel.Controls.Add(this.departmentComboBox);
             this.departmentPanel.Location = new System.Drawing.Point(209, 3);
             this.departmentPanel.Name = "departmentPanel";
-            this.departmentPanel.Size = new System.Drawing.Size(265, 31);
+            this.departmentPanel.Size = new System.Drawing.Size(265, 46);
             this.departmentPanel.TabIndex = 33;
+            // 
+            // departmentErrorLabel
+            // 
+            this.departmentErrorLabel.Location = new System.Drawing.Point(58, 28);
+            this.departmentErrorLabel.Name = "departmentErrorLabel";
+            this.departmentErrorLabel.Size = new System.Drawing.Size(203, 12);
+            this.departmentErrorLabel.TabIndex = 4;
             // 
             // departmentLabel
             // 
@@ -180,12 +244,20 @@
             // 
             // studentIDPanel
             // 
+            this.studentIDPanel.Controls.Add(this.studentIDErrorLabel);
             this.studentIDPanel.Controls.Add(this.studentIDLabel);
             this.studentIDPanel.Controls.Add(this.studentIDTextBox);
             this.studentIDPanel.Location = new System.Drawing.Point(480, 3);
             this.studentIDPanel.Name = "studentIDPanel";
-            this.studentIDPanel.Size = new System.Drawing.Size(210, 31);
+            this.studentIDPanel.Size = new System.Drawing.Size(210, 46);
             this.studentIDPanel.TabIndex = 34;
+            // 
+            // studentIDErrorLabel
+            // 
+            this.studentIDErrorLabel.Location = new System.Drawing.Point(60, 28);
+            this.studentIDErrorLabel.Name = "studentIDErrorLabel";
+            this.studentIDErrorLabel.Size = new System.Drawing.Size(144, 12);
+            this.studentIDErrorLabel.TabIndex = 6;
             // 
             // studentIDLabel
             // 
@@ -206,12 +278,20 @@
             // 
             // namePanel
             // 
+            this.namePanel.Controls.Add(this.nameErrorLabel);
             this.namePanel.Controls.Add(this.nameLabel);
             this.namePanel.Controls.Add(this.nameTextBox);
-            this.namePanel.Location = new System.Drawing.Point(3, 40);
+            this.namePanel.Location = new System.Drawing.Point(696, 3);
             this.namePanel.Name = "namePanel";
-            this.namePanel.Size = new System.Drawing.Size(164, 32);
+            this.namePanel.Size = new System.Drawing.Size(164, 46);
             this.namePanel.TabIndex = 35;
+            // 
+            // nameErrorLabel
+            // 
+            this.nameErrorLabel.Location = new System.Drawing.Point(57, 28);
+            this.nameErrorLabel.Name = "nameErrorLabel";
+            this.nameErrorLabel.Size = new System.Drawing.Size(100, 12);
+            this.nameErrorLabel.TabIndex = 8;
             // 
             // nameLabel
             // 
@@ -232,12 +312,20 @@
             // 
             // sexPanel
             // 
+            this.sexPanel.Controls.Add(this.sexErrorLabel);
             this.sexPanel.Controls.Add(this.sexLabel);
             this.sexPanel.Controls.Add(this.sexComboBox);
-            this.sexPanel.Location = new System.Drawing.Point(173, 40);
+            this.sexPanel.Location = new System.Drawing.Point(3, 55);
             this.sexPanel.Name = "sexPanel";
-            this.sexPanel.Size = new System.Drawing.Size(132, 32);
+            this.sexPanel.Size = new System.Drawing.Size(132, 46);
             this.sexPanel.TabIndex = 36;
+            // 
+            // sexErrorLabel
+            // 
+            this.sexErrorLabel.Location = new System.Drawing.Point(60, 28);
+            this.sexErrorLabel.Name = "sexErrorLabel";
+            this.sexErrorLabel.Size = new System.Drawing.Size(66, 12);
+            this.sexErrorLabel.TabIndex = 10;
             // 
             // sexLabel
             // 
@@ -262,15 +350,23 @@
             // 
             // birthdayPanel
             // 
+            this.birthdayPanel.Controls.Add(this.birthdayErrorLabel);
             this.birthdayPanel.Controls.Add(this.birthdayLabel);
             this.birthdayPanel.Controls.Add(this.birthdayYearComboBox);
             this.birthdayPanel.Controls.Add(this.birthdayYearLabel);
             this.birthdayPanel.Controls.Add(this.birthdayMonthComboBox);
             this.birthdayPanel.Controls.Add(this.birthdayMonthLabel);
-            this.birthdayPanel.Location = new System.Drawing.Point(311, 40);
+            this.birthdayPanel.Location = new System.Drawing.Point(141, 55);
             this.birthdayPanel.Name = "birthdayPanel";
-            this.birthdayPanel.Size = new System.Drawing.Size(289, 31);
+            this.birthdayPanel.Size = new System.Drawing.Size(289, 46);
             this.birthdayPanel.TabIndex = 37;
+            // 
+            // birthdayErrorLabel
+            // 
+            this.birthdayErrorLabel.Location = new System.Drawing.Point(79, 28);
+            this.birthdayErrorLabel.Name = "birthdayErrorLabel";
+            this.birthdayErrorLabel.Size = new System.Drawing.Size(205, 12);
+            this.birthdayErrorLabel.TabIndex = 15;
             // 
             // birthdayLabel
             // 
@@ -342,12 +438,20 @@
             // 
             // politicPanel
             // 
+            this.politicPanel.Controls.Add(this.politicErrorLabel);
             this.politicPanel.Controls.Add(this.politicLabel);
             this.politicPanel.Controls.Add(this.politicComboBox);
-            this.politicPanel.Location = new System.Drawing.Point(606, 40);
+            this.politicPanel.Location = new System.Drawing.Point(436, 55);
             this.politicPanel.Name = "politicPanel";
-            this.politicPanel.Size = new System.Drawing.Size(179, 31);
+            this.politicPanel.Size = new System.Drawing.Size(179, 46);
             this.politicPanel.TabIndex = 38;
+            // 
+            // politicErrorLabel
+            // 
+            this.politicErrorLabel.Location = new System.Drawing.Point(82, 28);
+            this.politicErrorLabel.Name = "politicErrorLabel";
+            this.politicErrorLabel.Size = new System.Drawing.Size(91, 12);
+            this.politicErrorLabel.TabIndex = 17;
             // 
             // politicLabel
             // 
@@ -374,12 +478,20 @@
             // 
             // nationalPanel
             // 
+            this.nationalPanel.Controls.Add(this.notionalErrorLabel);
             this.nationalPanel.Controls.Add(this.nationalLabel);
             this.nationalPanel.Controls.Add(this.nationalComboBox);
-            this.nationalPanel.Location = new System.Drawing.Point(3, 78);
+            this.nationalPanel.Location = new System.Drawing.Point(621, 55);
             this.nationalPanel.Name = "nationalPanel";
-            this.nationalPanel.Size = new System.Drawing.Size(134, 32);
+            this.nationalPanel.Size = new System.Drawing.Size(134, 46);
             this.nationalPanel.TabIndex = 39;
+            // 
+            // notionalErrorLabel
+            // 
+            this.notionalErrorLabel.Location = new System.Drawing.Point(60, 28);
+            this.notionalErrorLabel.Name = "notionalErrorLabel";
+            this.notionalErrorLabel.Size = new System.Drawing.Size(67, 12);
+            this.notionalErrorLabel.TabIndex = 19;
             // 
             // nationalLabel
             // 
@@ -407,15 +519,23 @@
             // 
             // enterTimePanel
             // 
+            this.enterTimePanel.Controls.Add(this.enterTimeErrorLabel);
             this.enterTimePanel.Controls.Add(this.enterTimeLabel);
             this.enterTimePanel.Controls.Add(this.enterYearComboBox);
             this.enterTimePanel.Controls.Add(this.enterYearLabel);
             this.enterTimePanel.Controls.Add(this.enterMonthComboBox);
             this.enterTimePanel.Controls.Add(this.enterMonthLabel);
-            this.enterTimePanel.Location = new System.Drawing.Point(143, 78);
+            this.enterTimePanel.Location = new System.Drawing.Point(3, 107);
             this.enterTimePanel.Name = "enterTimePanel";
-            this.enterTimePanel.Size = new System.Drawing.Size(275, 32);
+            this.enterTimePanel.Size = new System.Drawing.Size(275, 46);
             this.enterTimePanel.TabIndex = 40;
+            // 
+            // enterTimeErrorLabel
+            // 
+            this.enterTimeErrorLabel.Location = new System.Drawing.Point(82, 28);
+            this.enterTimeErrorLabel.Name = "enterTimeErrorLabel";
+            this.enterTimeErrorLabel.Size = new System.Drawing.Size(182, 12);
+            this.enterTimeErrorLabel.TabIndex = 24;
             // 
             // enterTimeLabel
             // 
@@ -487,12 +607,20 @@
             // 
             // professionPanel
             // 
+            this.professionPanel.Controls.Add(this.professionErrorLabel);
             this.professionPanel.Controls.Add(this.professionLabel);
             this.professionPanel.Controls.Add(this.professionTextBox);
-            this.professionPanel.Location = new System.Drawing.Point(424, 78);
+            this.professionPanel.Location = new System.Drawing.Point(284, 107);
             this.professionPanel.Name = "professionPanel";
-            this.professionPanel.Size = new System.Drawing.Size(288, 32);
+            this.professionPanel.Size = new System.Drawing.Size(288, 46);
             this.professionPanel.TabIndex = 41;
+            // 
+            // professionErrorLabel
+            // 
+            this.professionErrorLabel.Location = new System.Drawing.Point(84, 29);
+            this.professionErrorLabel.Name = "professionErrorLabel";
+            this.professionErrorLabel.Size = new System.Drawing.Size(201, 12);
+            this.professionErrorLabel.TabIndex = 26;
             // 
             // professionLabel
             // 
@@ -513,12 +641,20 @@
             // 
             // yearsPanel
             // 
+            this.yearsPanel.Controls.Add(this.yearsErrorLabel);
             this.yearsPanel.Controls.Add(this.yearsLabel);
             this.yearsPanel.Controls.Add(this.yearsComboBox);
-            this.yearsPanel.Location = new System.Drawing.Point(3, 116);
+            this.yearsPanel.Location = new System.Drawing.Point(578, 107);
             this.yearsPanel.Name = "yearsPanel";
-            this.yearsPanel.Size = new System.Drawing.Size(134, 32);
+            this.yearsPanel.Size = new System.Drawing.Size(134, 46);
             this.yearsPanel.TabIndex = 42;
+            // 
+            // yearsErrorLabel
+            // 
+            this.yearsErrorLabel.Location = new System.Drawing.Point(60, 28);
+            this.yearsErrorLabel.Name = "yearsErrorLabel";
+            this.yearsErrorLabel.Size = new System.Drawing.Size(67, 12);
+            this.yearsErrorLabel.TabIndex = 28;
             // 
             // yearsLabel
             // 
@@ -545,12 +681,20 @@
             // 
             // phonePanel
             // 
+            this.phonePanel.Controls.Add(this.phoneErrorLabel);
             this.phonePanel.Controls.Add(this.phoneLabel);
             this.phonePanel.Controls.Add(this.phoneTextBox);
-            this.phonePanel.Location = new System.Drawing.Point(143, 116);
+            this.phonePanel.Location = new System.Drawing.Point(3, 159);
             this.phonePanel.Name = "phonePanel";
-            this.phonePanel.Size = new System.Drawing.Size(193, 32);
+            this.phonePanel.Size = new System.Drawing.Size(193, 46);
             this.phonePanel.TabIndex = 43;
+            // 
+            // phoneErrorLabel
+            // 
+            this.phoneErrorLabel.Location = new System.Drawing.Point(82, 29);
+            this.phoneErrorLabel.Name = "phoneErrorLabel";
+            this.phoneErrorLabel.Size = new System.Drawing.Size(101, 12);
+            this.phoneErrorLabel.TabIndex = 30;
             // 
             // phoneLabel
             // 
@@ -571,12 +715,20 @@
             // 
             // IDPanel
             // 
+            this.IDPanel.Controls.Add(this.IDErrorLabel);
             this.IDPanel.Controls.Add(this.IDLabel);
             this.IDPanel.Controls.Add(this.IDTextBox);
-            this.IDPanel.Location = new System.Drawing.Point(342, 116);
+            this.IDPanel.Location = new System.Drawing.Point(202, 159);
             this.IDPanel.Name = "IDPanel";
-            this.IDPanel.Size = new System.Drawing.Size(358, 32);
+            this.IDPanel.Size = new System.Drawing.Size(358, 46);
             this.IDPanel.TabIndex = 44;
+            // 
+            // IDErrorLabel
+            // 
+            this.IDErrorLabel.Location = new System.Drawing.Point(82, 28);
+            this.IDErrorLabel.Name = "IDErrorLabel";
+            this.IDErrorLabel.Size = new System.Drawing.Size(270, 12);
+            this.IDErrorLabel.TabIndex = 32;
             // 
             // IDLabel
             // 
@@ -605,35 +757,276 @@
             this.clientFromTabControl.Location = new System.Drawing.Point(12, 12);
             this.clientFromTabControl.Name = "clientFromTabControl";
             this.clientFromTabControl.SelectedIndex = 0;
-            this.clientFromTabControl.Size = new System.Drawing.Size(839, 447);
+            this.clientFromTabControl.Size = new System.Drawing.Size(881, 473);
             this.clientFromTabControl.TabIndex = 2;
             // 
             // firstPage
             // 
+            this.firstPage.AutoScroll = true;
             this.firstPage.BackColor = System.Drawing.Color.Transparent;
-            this.firstPage.Controls.Add(this.personalInformationFlowLayoutPanel);
+            this.firstPage.Controls.Add(this.firstPageFlowLayout);
             this.firstPage.Location = new System.Drawing.Point(4, 22);
             this.firstPage.Name = "firstPage";
             this.firstPage.Padding = new System.Windows.Forms.Padding(3);
-            this.firstPage.Size = new System.Drawing.Size(831, 421);
+            this.firstPage.Size = new System.Drawing.Size(873, 447);
             this.firstPage.TabIndex = 0;
             this.firstPage.Text = "第一页";
+            // 
+            // StudyFlowLayout
+            // 
+            this.StudyFlowLayout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.StudyFlowLayout.AutoSize = true;
+            this.StudyFlowLayout.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.StudyFlowLayout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.StudyFlowLayout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StudyFlowLayout.Controls.Add(this.professionSumPanel);
+            this.StudyFlowLayout.Controls.Add(this.markPositionPanel);
+            this.StudyFlowLayout.Controls.Add(this.isEstimationPanel);
+            this.StudyFlowLayout.Controls.Add(this.estimationPanel);
+            this.StudyFlowLayout.Controls.Add(this.coursePanel);
+            this.StudyFlowLayout.Controls.Add(this.passPanel);
+            this.StudyFlowLayout.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.firstPageFlowLayout.SetFlowBreak(this.StudyFlowLayout, true);
+            this.StudyFlowLayout.Location = new System.Drawing.Point(3, 219);
+            this.StudyFlowLayout.Name = "StudyFlowLayout";
+            this.StudyFlowLayout.Size = new System.Drawing.Size(866, 106);
+            this.StudyFlowLayout.TabIndex = 1;
+            // 
+            // professionSumPanel
+            // 
+            this.professionSumPanel.Controls.Add(this.professionSumErrorLabel);
+            this.professionSumPanel.Controls.Add(this.professionSumTextBox);
+            this.professionSumPanel.Controls.Add(this.professionSumLabel);
+            this.professionSumPanel.Location = new System.Drawing.Point(3, 3);
+            this.professionSumPanel.Name = "professionSumPanel";
+            this.professionSumPanel.Size = new System.Drawing.Size(157, 46);
+            this.professionSumPanel.TabIndex = 33;
+            // 
+            // professionSumErrorLabel
+            // 
+            this.professionSumErrorLabel.Location = new System.Drawing.Point(96, 28);
+            this.professionSumErrorLabel.Name = "professionSumErrorLabel";
+            this.professionSumErrorLabel.Size = new System.Drawing.Size(54, 12);
+            this.professionSumErrorLabel.TabIndex = 2;
+            // 
+            // professionSumTextBox
+            // 
+            this.professionSumTextBox.Location = new System.Drawing.Point(96, 4);
+            this.professionSumTextBox.Name = "professionSumTextBox";
+            this.professionSumTextBox.Size = new System.Drawing.Size(54, 21);
+            this.professionSumTextBox.TabIndex = 1;
+            // 
+            // professionSumLabel
+            // 
+            this.professionSumLabel.AutoSize = true;
+            this.professionSumLabel.Location = new System.Drawing.Point(3, 3);
+            this.professionSumLabel.Name = "professionSumLabel";
+            this.professionSumLabel.Padding = new System.Windows.Forms.Padding(5);
+            this.professionSumLabel.Size = new System.Drawing.Size(87, 22);
+            this.professionSumLabel.TabIndex = 0;
+            this.professionSumLabel.Text = "专业总人数：";
+            // 
+            // markPositionPanel
+            // 
+            this.markPositionPanel.Controls.Add(this.markPostionErrorLabel);
+            this.markPositionPanel.Controls.Add(this.markPostionLabelTextBox);
+            this.markPositionPanel.Controls.Add(this.markPositionLabel);
+            this.markPositionPanel.Location = new System.Drawing.Point(166, 3);
+            this.markPositionPanel.Name = "markPositionPanel";
+            this.markPositionPanel.Size = new System.Drawing.Size(169, 46);
+            this.markPositionPanel.TabIndex = 34;
+            // 
+            // markPostionErrorLabel
+            // 
+            this.markPostionErrorLabel.Location = new System.Drawing.Point(108, 28);
+            this.markPostionErrorLabel.Name = "markPostionErrorLabel";
+            this.markPostionErrorLabel.Size = new System.Drawing.Size(54, 12);
+            this.markPostionErrorLabel.TabIndex = 2;
+            // 
+            // markPostionLabelTextBox
+            // 
+            this.markPostionLabelTextBox.Location = new System.Drawing.Point(108, 4);
+            this.markPostionLabelTextBox.Name = "markPostionLabelTextBox";
+            this.markPostionLabelTextBox.Size = new System.Drawing.Size(54, 21);
+            this.markPostionLabelTextBox.TabIndex = 1;
+            // 
+            // markPositionLabel
+            // 
+            this.markPositionLabel.AutoSize = true;
+            this.markPositionLabel.Location = new System.Drawing.Point(3, 3);
+            this.markPositionLabel.Name = "markPositionLabel";
+            this.markPositionLabel.Padding = new System.Windows.Forms.Padding(5);
+            this.markPositionLabel.Size = new System.Drawing.Size(99, 22);
+            this.markPositionLabel.TabIndex = 0;
+            this.markPositionLabel.Text = "学习成绩排名：";
+            // 
+            // isEstimationPanel
+            // 
+            this.isEstimationPanel.Controls.Add(this.isEstimationErrorLabel);
+            this.isEstimationPanel.Controls.Add(this.isEstimationLabel);
+            this.isEstimationPanel.Controls.Add(this.isEstimationComboBox);
+            this.isEstimationPanel.Location = new System.Drawing.Point(341, 3);
+            this.isEstimationPanel.Name = "isEstimationPanel";
+            this.isEstimationPanel.Size = new System.Drawing.Size(182, 46);
+            this.isEstimationPanel.TabIndex = 40;
+            // 
+            // isEstimationErrorLabel
+            // 
+            this.isEstimationErrorLabel.Location = new System.Drawing.Point(132, 28);
+            this.isEstimationErrorLabel.Name = "isEstimationErrorLabel";
+            this.isEstimationErrorLabel.Size = new System.Drawing.Size(45, 12);
+            this.isEstimationErrorLabel.TabIndex = 19;
+            // 
+            // isEstimationLabel
+            // 
+            this.isEstimationLabel.AutoSize = true;
+            this.isEstimationLabel.Location = new System.Drawing.Point(3, 3);
+            this.isEstimationLabel.Name = "isEstimationLabel";
+            this.isEstimationLabel.Padding = new System.Windows.Forms.Padding(5);
+            this.isEstimationLabel.Size = new System.Drawing.Size(123, 22);
+            this.isEstimationLabel.TabIndex = 17;
+            this.isEstimationLabel.Text = "是否综合素质考评：";
+            // 
+            // isEstimationComboBox
+            // 
+            this.isEstimationComboBox.FormattingEnabled = true;
+            this.isEstimationComboBox.Items.AddRange(new object[] {
+            "是",
+            "否"});
+            this.isEstimationComboBox.Location = new System.Drawing.Point(132, 4);
+            this.isEstimationComboBox.Name = "isEstimationComboBox";
+            this.isEstimationComboBox.Size = new System.Drawing.Size(45, 20);
+            this.isEstimationComboBox.TabIndex = 18;
+            // 
+            // estimationPanel
+            // 
+            this.estimationPanel.Controls.Add(this.estimationErrorLabel);
+            this.estimationPanel.Controls.Add(this.estimationTextBox);
+            this.estimationPanel.Controls.Add(this.estimationLabel);
+            this.estimationPanel.Location = new System.Drawing.Point(529, 3);
+            this.estimationPanel.Name = "estimationPanel";
+            this.estimationPanel.Size = new System.Drawing.Size(169, 46);
+            this.estimationPanel.TabIndex = 41;
+            // 
+            // estimationErrorLabel
+            // 
+            this.estimationErrorLabel.Location = new System.Drawing.Point(108, 28);
+            this.estimationErrorLabel.Name = "estimationErrorLabel";
+            this.estimationErrorLabel.Size = new System.Drawing.Size(54, 12);
+            this.estimationErrorLabel.TabIndex = 2;
+            // 
+            // estimationTextBox
+            // 
+            this.estimationTextBox.Location = new System.Drawing.Point(108, 4);
+            this.estimationTextBox.Name = "estimationTextBox";
+            this.estimationTextBox.Size = new System.Drawing.Size(54, 21);
+            this.estimationTextBox.TabIndex = 1;
+            // 
+            // estimationLabel
+            // 
+            this.estimationLabel.AutoSize = true;
+            this.estimationLabel.Location = new System.Drawing.Point(3, 3);
+            this.estimationLabel.Name = "estimationLabel";
+            this.estimationLabel.Padding = new System.Windows.Forms.Padding(5);
+            this.estimationLabel.Size = new System.Drawing.Size(99, 22);
+            this.estimationLabel.TabIndex = 0;
+            this.estimationLabel.Text = "综合考评排名：";
+            // 
+            // coursePanel
+            // 
+            this.coursePanel.Controls.Add(this.courseErrorLabel);
+            this.coursePanel.Controls.Add(this.courseTextBox);
+            this.coursePanel.Controls.Add(this.courseLabel);
+            this.coursePanel.Location = new System.Drawing.Point(704, 3);
+            this.coursePanel.Name = "coursePanel";
+            this.coursePanel.Size = new System.Drawing.Size(157, 46);
+            this.coursePanel.TabIndex = 42;
+            // 
+            // courseErrorLabel
+            // 
+            this.courseErrorLabel.Location = new System.Drawing.Point(96, 28);
+            this.courseErrorLabel.Name = "courseErrorLabel";
+            this.courseErrorLabel.Size = new System.Drawing.Size(54, 12);
+            this.courseErrorLabel.TabIndex = 2;
+            // 
+            // courseTextBox
+            // 
+            this.courseTextBox.Location = new System.Drawing.Point(96, 4);
+            this.courseTextBox.Name = "courseTextBox";
+            this.courseTextBox.Size = new System.Drawing.Size(54, 21);
+            this.courseTextBox.TabIndex = 1;
+            // 
+            // courseLabel
+            // 
+            this.courseLabel.AutoSize = true;
+            this.courseLabel.Location = new System.Drawing.Point(3, 3);
+            this.courseLabel.Name = "courseLabel";
+            this.courseLabel.Padding = new System.Windows.Forms.Padding(5);
+            this.courseLabel.Size = new System.Drawing.Size(87, 22);
+            this.courseLabel.TabIndex = 0;
+            this.courseLabel.Text = "必修课数量：";
+            // 
+            // passPanel
+            // 
+            this.passPanel.Controls.Add(this.passErrorLabel);
+            this.passPanel.Controls.Add(this.passTextBox);
+            this.passPanel.Controls.Add(this.passLabel);
+            this.passPanel.Location = new System.Drawing.Point(3, 55);
+            this.passPanel.Name = "passPanel";
+            this.passPanel.Size = new System.Drawing.Size(144, 46);
+            this.passPanel.TabIndex = 43;
+            // 
+            // passErrorLabel
+            // 
+            this.passErrorLabel.Location = new System.Drawing.Point(84, 28);
+            this.passErrorLabel.Name = "passErrorLabel";
+            this.passErrorLabel.Size = new System.Drawing.Size(55, 12);
+            this.passErrorLabel.TabIndex = 2;
+            // 
+            // passTextBox
+            // 
+            this.passTextBox.Location = new System.Drawing.Point(84, 4);
+            this.passTextBox.Name = "passTextBox";
+            this.passTextBox.Size = new System.Drawing.Size(54, 21);
+            this.passTextBox.TabIndex = 1;
+            // 
+            // passLabel
+            // 
+            this.passLabel.AutoSize = true;
+            this.passLabel.Location = new System.Drawing.Point(3, 3);
+            this.passLabel.Name = "passLabel";
+            this.passLabel.Padding = new System.Windows.Forms.Padding(5);
+            this.passLabel.Size = new System.Drawing.Size(75, 22);
+            this.passLabel.TabIndex = 0;
+            this.passLabel.Text = "及格数量：";
             // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(831, 421);
+            this.tabPage2.Size = new System.Drawing.Size(873, 447);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // firstPageFlowLayout
+            // 
+            this.firstPageFlowLayout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.firstPageFlowLayout.AutoSize = true;
+            this.firstPageFlowLayout.Controls.Add(this.personalInformationFlowLayoutPanel);
+            this.firstPageFlowLayout.Controls.Add(this.StudyFlowLayout);
+            this.firstPageFlowLayout.Location = new System.Drawing.Point(0, 0);
+            this.firstPageFlowLayout.Name = "firstPageFlowLayout";
+            this.firstPageFlowLayout.Size = new System.Drawing.Size(872, 441);
+            this.firstPageFlowLayout.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 471);
+            this.ClientSize = new System.Drawing.Size(905, 497);
             this.Controls.Add(this.clientFromTabControl);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -667,6 +1060,21 @@
             this.clientFromTabControl.ResumeLayout(false);
             this.firstPage.ResumeLayout(false);
             this.firstPage.PerformLayout();
+            this.StudyFlowLayout.ResumeLayout(false);
+            this.professionSumPanel.ResumeLayout(false);
+            this.professionSumPanel.PerformLayout();
+            this.markPositionPanel.ResumeLayout(false);
+            this.markPositionPanel.PerformLayout();
+            this.isEstimationPanel.ResumeLayout(false);
+            this.isEstimationPanel.PerformLayout();
+            this.estimationPanel.ResumeLayout(false);
+            this.estimationPanel.PerformLayout();
+            this.coursePanel.ResumeLayout(false);
+            this.coursePanel.PerformLayout();
+            this.passPanel.ResumeLayout(false);
+            this.passPanel.PerformLayout();
+            this.firstPageFlowLayout.ResumeLayout(false);
+            this.firstPageFlowLayout.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -722,6 +1130,45 @@
         private System.Windows.Forms.Panel yearsPanel;
         private System.Windows.Forms.Panel phonePanel;
         private System.Windows.Forms.Panel IDPanel;
+        private System.Windows.Forms.Label schoolErrorLabel;
+        private System.Windows.Forms.Label departmentErrorLabel;
+        private System.Windows.Forms.Label studentIDErrorLabel;
+        private System.Windows.Forms.Label nameErrorLabel;
+        private System.Windows.Forms.Label sexErrorLabel;
+        private System.Windows.Forms.Label birthdayErrorLabel;
+        private System.Windows.Forms.Label politicErrorLabel;
+        private System.Windows.Forms.Label notionalErrorLabel;
+        private System.Windows.Forms.Label enterTimeErrorLabel;
+        private System.Windows.Forms.Label professionErrorLabel;
+        private System.Windows.Forms.Label yearsErrorLabel;
+        private System.Windows.Forms.Label phoneErrorLabel;
+        private System.Windows.Forms.Label IDErrorLabel;
+        private System.Windows.Forms.FlowLayoutPanel StudyFlowLayout;
+        private System.Windows.Forms.Panel professionSumPanel;
+        private System.Windows.Forms.Label professionSumErrorLabel;
+        private System.Windows.Forms.TextBox professionSumTextBox;
+        private System.Windows.Forms.Label professionSumLabel;
+        private System.Windows.Forms.Panel markPositionPanel;
+        private System.Windows.Forms.Label markPostionErrorLabel;
+        private System.Windows.Forms.TextBox markPostionLabelTextBox;
+        private System.Windows.Forms.Label markPositionLabel;
+        private System.Windows.Forms.Panel isEstimationPanel;
+        private System.Windows.Forms.Label isEstimationErrorLabel;
+        private System.Windows.Forms.Label isEstimationLabel;
+        private System.Windows.Forms.ComboBox isEstimationComboBox;
+        private System.Windows.Forms.Panel estimationPanel;
+        private System.Windows.Forms.Label estimationErrorLabel;
+        private System.Windows.Forms.TextBox estimationTextBox;
+        private System.Windows.Forms.Label estimationLabel;
+        private System.Windows.Forms.Panel coursePanel;
+        private System.Windows.Forms.Label courseErrorLabel;
+        private System.Windows.Forms.TextBox courseTextBox;
+        private System.Windows.Forms.Label courseLabel;
+        private System.Windows.Forms.Panel passPanel;
+        private System.Windows.Forms.Label passErrorLabel;
+        private System.Windows.Forms.TextBox passTextBox;
+        private System.Windows.Forms.Label passLabel;
+        private System.Windows.Forms.FlowLayoutPanel firstPageFlowLayout;
 
     }
 }
