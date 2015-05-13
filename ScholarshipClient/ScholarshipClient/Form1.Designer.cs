@@ -193,6 +193,7 @@
             this.schoolTextBox.Size = new System.Drawing.Size(135, 21);
             this.schoolTextBox.TabIndex = 1;
             this.schoolTextBox.Text = "山东大学";
+            this.schoolTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.schoolTextBox_Validating);
             // 
             // schoolLabel
             // 
@@ -241,6 +242,7 @@
             this.departmentComboBox.Name = "departmentComboBox";
             this.departmentComboBox.Size = new System.Drawing.Size(201, 20);
             this.departmentComboBox.TabIndex = 3;
+            this.departmentComboBox.Validating += new System.ComponentModel.CancelEventHandler(this.departmentComboBox_Validating);
             // 
             // studentIDPanel
             // 
@@ -275,6 +277,7 @@
             this.studentIDTextBox.Name = "studentIDTextBox";
             this.studentIDTextBox.Size = new System.Drawing.Size(145, 21);
             this.studentIDTextBox.TabIndex = 5;
+            this.studentIDTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.studentIDTextBox_Validating);
             // 
             // namePanel
             // 
@@ -309,6 +312,7 @@
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(100, 21);
             this.nameTextBox.TabIndex = 7;
+            this.nameTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.nameTextBox_Validating);
             // 
             // sexPanel
             // 
@@ -347,6 +351,7 @@
             this.sexComboBox.Name = "sexComboBox";
             this.sexComboBox.Size = new System.Drawing.Size(66, 20);
             this.sexComboBox.TabIndex = 9;
+            this.sexComboBox.Validating += new System.ComponentModel.CancelEventHandler(this.sexComboBox_Validating);
             // 
             // birthdayPanel
             // 
@@ -394,6 +399,7 @@
             this.birthdayYearComboBox.Name = "birthdayYearComboBox";
             this.birthdayYearComboBox.Size = new System.Drawing.Size(78, 20);
             this.birthdayYearComboBox.TabIndex = 11;
+            this.birthdayYearComboBox.Validating += new System.ComponentModel.CancelEventHandler(this.birthdayYearComboBox_Validating);
             // 
             // birthdayYearLabel
             // 
@@ -425,6 +431,7 @@
             this.birthdayMonthComboBox.Name = "birthdayMonthComboBox";
             this.birthdayMonthComboBox.Size = new System.Drawing.Size(75, 20);
             this.birthdayMonthComboBox.TabIndex = 13;
+            this.birthdayMonthComboBox.Validating += new System.ComponentModel.CancelEventHandler(this.birthdayMonthComboBox_Validating);
             // 
             // birthdayMonthLabel
             // 
@@ -475,6 +482,7 @@
             this.politicComboBox.Name = "politicComboBox";
             this.politicComboBox.Size = new System.Drawing.Size(89, 20);
             this.politicComboBox.TabIndex = 16;
+            this.politicComboBox.Validating += new System.ComponentModel.CancelEventHandler(this.politicComboBox_Validating);
             // 
             // nationalPanel
             // 
@@ -516,6 +524,7 @@
             this.nationalComboBox.Name = "nationalComboBox";
             this.nationalComboBox.Size = new System.Drawing.Size(67, 20);
             this.nationalComboBox.TabIndex = 18;
+            this.nationalComboBox.Validating += new System.ComponentModel.CancelEventHandler(this.nationalComboBox_Validating);
             // 
             // enterTimePanel
             // 
@@ -563,6 +572,7 @@
             this.enterYearComboBox.Name = "enterYearComboBox";
             this.enterYearComboBox.Size = new System.Drawing.Size(68, 20);
             this.enterYearComboBox.TabIndex = 20;
+            this.enterYearComboBox.Validating += new System.ComponentModel.CancelEventHandler(this.enterYearComboBox_Validating);
             // 
             // enterYearLabel
             // 
@@ -594,6 +604,7 @@
             this.enterMonthComboBox.Name = "enterMonthComboBox";
             this.enterMonthComboBox.Size = new System.Drawing.Size(63, 20);
             this.enterMonthComboBox.TabIndex = 22;
+            this.enterMonthComboBox.Validating += new System.ComponentModel.CancelEventHandler(this.enterMonthComboBox_Validating);
             // 
             // enterMonthLabel
             // 
@@ -638,6 +649,7 @@
             this.professionTextBox.Name = "professionTextBox";
             this.professionTextBox.Size = new System.Drawing.Size(201, 21);
             this.professionTextBox.TabIndex = 25;
+            this.professionTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.professionTextBox_Validating);
             // 
             // yearsPanel
             // 
@@ -678,6 +690,7 @@
             this.yearsComboBox.Name = "yearsComboBox";
             this.yearsComboBox.Size = new System.Drawing.Size(67, 20);
             this.yearsComboBox.TabIndex = 27;
+            this.yearsComboBox.Validating += new System.ComponentModel.CancelEventHandler(this.yearsComboBox_Validating);
             // 
             // phonePanel
             // 
@@ -712,6 +725,7 @@
             this.phoneTextBox.Name = "phoneTextBox";
             this.phoneTextBox.Size = new System.Drawing.Size(99, 21);
             this.phoneTextBox.TabIndex = 29;
+            this.phoneTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.phoneTextBox_Validating);
             // 
             // IDPanel
             // 
@@ -746,6 +760,7 @@
             this.IDTextBox.Name = "IDTextBox";
             this.IDTextBox.Size = new System.Drawing.Size(268, 21);
             this.IDTextBox.TabIndex = 31;
+            this.IDTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.IDTextBox_Validating);
             // 
             // clientFromTabControl
             // 
@@ -815,6 +830,7 @@
             this.professionSumTextBox.Name = "professionSumTextBox";
             this.professionSumTextBox.Size = new System.Drawing.Size(54, 21);
             this.professionSumTextBox.TabIndex = 1;
+            this.professionSumTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.professionSumTextBox_Validating);
             // 
             // professionSumLabel
             // 
@@ -849,6 +865,7 @@
             this.markPostionLabelTextBox.Name = "markPostionLabelTextBox";
             this.markPostionLabelTextBox.Size = new System.Drawing.Size(54, 21);
             this.markPostionLabelTextBox.TabIndex = 1;
+            this.markPostionLabelTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.markPostionLabelTextBox_Validating);
             // 
             // markPositionLabel
             // 
@@ -897,6 +914,7 @@
             this.isEstimationComboBox.Name = "isEstimationComboBox";
             this.isEstimationComboBox.Size = new System.Drawing.Size(45, 20);
             this.isEstimationComboBox.TabIndex = 18;
+            this.isEstimationComboBox.Validating += new System.ComponentModel.CancelEventHandler(this.isEstimationComboBox_Validating);
             // 
             // estimationPanel
             // 
@@ -921,6 +939,7 @@
             this.estimationTextBox.Name = "estimationTextBox";
             this.estimationTextBox.Size = new System.Drawing.Size(54, 21);
             this.estimationTextBox.TabIndex = 1;
+            this.estimationTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.estimationTextBox_Validating);
             // 
             // estimationLabel
             // 
@@ -955,6 +974,7 @@
             this.courseTextBox.Name = "courseTextBox";
             this.courseTextBox.Size = new System.Drawing.Size(54, 21);
             this.courseTextBox.TabIndex = 1;
+            this.courseTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.courseTextBox_Validating);
             // 
             // courseLabel
             // 
@@ -989,6 +1009,7 @@
             this.passTextBox.Name = "passTextBox";
             this.passTextBox.Size = new System.Drawing.Size(54, 21);
             this.passTextBox.TabIndex = 1;
+            this.passTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.passTextBox_Validating);
             // 
             // passLabel
             // 
