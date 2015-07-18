@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.personalInformationFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.schoolPanel = new System.Windows.Forms.Panel();
             this.schoolErrorLabel = new System.Windows.Forms.Label();
@@ -89,6 +90,7 @@
             this.IDTextBox = new System.Windows.Forms.TextBox();
             this.clientFromTabControl = new System.Windows.Forms.TabControl();
             this.firstPage = new System.Windows.Forms.TabPage();
+            this.firstPageFlowLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.StudyFlowLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.professionSumPanel = new System.Windows.Forms.Panel();
             this.professionSumErrorLabel = new System.Windows.Forms.Label();
@@ -115,7 +117,10 @@
             this.passTextBox = new System.Windows.Forms.TextBox();
             this.passLabel = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.firstPageFlowLayout = new System.Windows.Forms.FlowLayoutPanel();
+            this.idCardPanel1 = new ScholarshipClient.GUI.IDCardPanel();
+            this.academicPanel1 = new ScholarshipClient.GUI.AcademicPanel();
+            this.schemasPanel1 = new ScholarshipClient.GUI.SchemasPanel();
+            this.studentYearsPanel1 = new ScholarshipClient.GUI.StudentYearsPanel();
             this.personalInformationFlowLayoutPanel.SuspendLayout();
             this.schoolPanel.SuspendLayout();
             this.departmentPanel.SuspendLayout();
@@ -132,6 +137,7 @@
             this.IDPanel.SuspendLayout();
             this.clientFromTabControl.SuspendLayout();
             this.firstPage.SuspendLayout();
+            this.firstPageFlowLayout.SuspendLayout();
             this.StudyFlowLayout.SuspendLayout();
             this.professionSumPanel.SuspendLayout();
             this.markPositionPanel.SuspendLayout();
@@ -139,7 +145,6 @@
             this.estimationPanel.SuspendLayout();
             this.coursePanel.SuspendLayout();
             this.passPanel.SuspendLayout();
-            this.firstPageFlowLayout.SuspendLayout();
             this.SuspendLayout();
             // 
             // personalInformationFlowLayoutPanel
@@ -166,7 +171,7 @@
             this.personalInformationFlowLayoutPanel.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.personalInformationFlowLayoutPanel.Location = new System.Drawing.Point(3, 3);
             this.personalInformationFlowLayoutPanel.Name = "personalInformationFlowLayoutPanel";
-            this.personalInformationFlowLayoutPanel.Size = new System.Drawing.Size(865, 210);
+            this.personalInformationFlowLayoutPanel.Size = new System.Drawing.Size(790, 210);
             this.personalInformationFlowLayoutPanel.TabIndex = 0;
             // 
             // schoolPanel
@@ -284,7 +289,7 @@
             this.namePanel.Controls.Add(this.nameErrorLabel);
             this.namePanel.Controls.Add(this.nameLabel);
             this.namePanel.Controls.Add(this.nameTextBox);
-            this.namePanel.Location = new System.Drawing.Point(696, 3);
+            this.namePanel.Location = new System.Drawing.Point(3, 55);
             this.namePanel.Name = "namePanel";
             this.namePanel.Size = new System.Drawing.Size(164, 46);
             this.namePanel.TabIndex = 35;
@@ -319,7 +324,7 @@
             this.sexPanel.Controls.Add(this.sexErrorLabel);
             this.sexPanel.Controls.Add(this.sexLabel);
             this.sexPanel.Controls.Add(this.sexComboBox);
-            this.sexPanel.Location = new System.Drawing.Point(3, 55);
+            this.sexPanel.Location = new System.Drawing.Point(173, 55);
             this.sexPanel.Name = "sexPanel";
             this.sexPanel.Size = new System.Drawing.Size(132, 46);
             this.sexPanel.TabIndex = 36;
@@ -361,7 +366,7 @@
             this.birthdayPanel.Controls.Add(this.birthdayYearLabel);
             this.birthdayPanel.Controls.Add(this.birthdayMonthComboBox);
             this.birthdayPanel.Controls.Add(this.birthdayMonthLabel);
-            this.birthdayPanel.Location = new System.Drawing.Point(141, 55);
+            this.birthdayPanel.Location = new System.Drawing.Point(311, 55);
             this.birthdayPanel.Name = "birthdayPanel";
             this.birthdayPanel.Size = new System.Drawing.Size(289, 46);
             this.birthdayPanel.TabIndex = 37;
@@ -448,7 +453,7 @@
             this.politicPanel.Controls.Add(this.politicErrorLabel);
             this.politicPanel.Controls.Add(this.politicLabel);
             this.politicPanel.Controls.Add(this.politicComboBox);
-            this.politicPanel.Location = new System.Drawing.Point(436, 55);
+            this.politicPanel.Location = new System.Drawing.Point(606, 55);
             this.politicPanel.Name = "politicPanel";
             this.politicPanel.Size = new System.Drawing.Size(179, 46);
             this.politicPanel.TabIndex = 38;
@@ -489,7 +494,7 @@
             this.nationalPanel.Controls.Add(this.notionalErrorLabel);
             this.nationalPanel.Controls.Add(this.nationalLabel);
             this.nationalPanel.Controls.Add(this.nationalComboBox);
-            this.nationalPanel.Location = new System.Drawing.Point(621, 55);
+            this.nationalPanel.Location = new System.Drawing.Point(3, 107);
             this.nationalPanel.Name = "nationalPanel";
             this.nationalPanel.Size = new System.Drawing.Size(134, 46);
             this.nationalPanel.TabIndex = 39;
@@ -534,7 +539,7 @@
             this.enterTimePanel.Controls.Add(this.enterYearLabel);
             this.enterTimePanel.Controls.Add(this.enterMonthComboBox);
             this.enterTimePanel.Controls.Add(this.enterMonthLabel);
-            this.enterTimePanel.Location = new System.Drawing.Point(3, 107);
+            this.enterTimePanel.Location = new System.Drawing.Point(143, 107);
             this.enterTimePanel.Name = "enterTimePanel";
             this.enterTimePanel.Size = new System.Drawing.Size(275, 46);
             this.enterTimePanel.TabIndex = 40;
@@ -621,7 +626,7 @@
             this.professionPanel.Controls.Add(this.professionErrorLabel);
             this.professionPanel.Controls.Add(this.professionLabel);
             this.professionPanel.Controls.Add(this.professionTextBox);
-            this.professionPanel.Location = new System.Drawing.Point(284, 107);
+            this.professionPanel.Location = new System.Drawing.Point(424, 107);
             this.professionPanel.Name = "professionPanel";
             this.professionPanel.Size = new System.Drawing.Size(288, 46);
             this.professionPanel.TabIndex = 41;
@@ -656,7 +661,7 @@
             this.yearsPanel.Controls.Add(this.yearsErrorLabel);
             this.yearsPanel.Controls.Add(this.yearsLabel);
             this.yearsPanel.Controls.Add(this.yearsComboBox);
-            this.yearsPanel.Location = new System.Drawing.Point(578, 107);
+            this.yearsPanel.Location = new System.Drawing.Point(3, 159);
             this.yearsPanel.Name = "yearsPanel";
             this.yearsPanel.Size = new System.Drawing.Size(134, 46);
             this.yearsPanel.TabIndex = 42;
@@ -697,7 +702,7 @@
             this.phonePanel.Controls.Add(this.phoneErrorLabel);
             this.phonePanel.Controls.Add(this.phoneLabel);
             this.phonePanel.Controls.Add(this.phoneTextBox);
-            this.phonePanel.Location = new System.Drawing.Point(3, 159);
+            this.phonePanel.Location = new System.Drawing.Point(143, 159);
             this.phonePanel.Name = "phonePanel";
             this.phonePanel.Size = new System.Drawing.Size(193, 46);
             this.phonePanel.TabIndex = 43;
@@ -732,7 +737,7 @@
             this.IDPanel.Controls.Add(this.IDErrorLabel);
             this.IDPanel.Controls.Add(this.IDLabel);
             this.IDPanel.Controls.Add(this.IDTextBox);
-            this.IDPanel.Location = new System.Drawing.Point(202, 159);
+            this.IDPanel.Location = new System.Drawing.Point(342, 159);
             this.IDPanel.Name = "IDPanel";
             this.IDPanel.Size = new System.Drawing.Size(358, 46);
             this.IDPanel.TabIndex = 44;
@@ -772,7 +777,7 @@
             this.clientFromTabControl.Location = new System.Drawing.Point(12, 12);
             this.clientFromTabControl.Name = "clientFromTabControl";
             this.clientFromTabControl.SelectedIndex = 0;
-            this.clientFromTabControl.Size = new System.Drawing.Size(881, 473);
+            this.clientFromTabControl.Size = new System.Drawing.Size(881, 512);
             this.clientFromTabControl.TabIndex = 2;
             // 
             // firstPage
@@ -783,9 +788,23 @@
             this.firstPage.Location = new System.Drawing.Point(4, 22);
             this.firstPage.Name = "firstPage";
             this.firstPage.Padding = new System.Windows.Forms.Padding(3);
-            this.firstPage.Size = new System.Drawing.Size(873, 447);
+            this.firstPage.Size = new System.Drawing.Size(873, 486);
             this.firstPage.TabIndex = 0;
             this.firstPage.Text = "第一页";
+            // 
+            // firstPageFlowLayout
+            // 
+            this.firstPageFlowLayout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.firstPageFlowLayout.AutoSize = true;
+            this.firstPageFlowLayout.Controls.Add(this.personalInformationFlowLayoutPanel);
+            this.firstPageFlowLayout.Controls.Add(this.StudyFlowLayout);
+            this.firstPageFlowLayout.Controls.Add(this.schemasPanel1);
+            this.firstPageFlowLayout.Controls.Add(this.studentYearsPanel1);
+            this.firstPageFlowLayout.Location = new System.Drawing.Point(0, 0);
+            this.firstPageFlowLayout.Name = "firstPageFlowLayout";
+            this.firstPageFlowLayout.Size = new System.Drawing.Size(855, 490);
+            this.firstPageFlowLayout.TabIndex = 2;
             // 
             // StudyFlowLayout
             // 
@@ -800,11 +819,13 @@
             this.StudyFlowLayout.Controls.Add(this.estimationPanel);
             this.StudyFlowLayout.Controls.Add(this.coursePanel);
             this.StudyFlowLayout.Controls.Add(this.passPanel);
+            this.StudyFlowLayout.Controls.Add(this.idCardPanel1);
+            this.StudyFlowLayout.Controls.Add(this.academicPanel1);
             this.StudyFlowLayout.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.firstPageFlowLayout.SetFlowBreak(this.StudyFlowLayout, true);
             this.StudyFlowLayout.Location = new System.Drawing.Point(3, 219);
             this.StudyFlowLayout.Name = "StudyFlowLayout";
-            this.StudyFlowLayout.Size = new System.Drawing.Size(866, 106);
+            this.StudyFlowLayout.Size = new System.Drawing.Size(746, 106);
             this.StudyFlowLayout.TabIndex = 1;
             // 
             // professionSumPanel
@@ -956,7 +977,7 @@
             this.coursePanel.Controls.Add(this.courseErrorLabel);
             this.coursePanel.Controls.Add(this.courseTextBox);
             this.coursePanel.Controls.Add(this.courseLabel);
-            this.coursePanel.Location = new System.Drawing.Point(704, 3);
+            this.coursePanel.Location = new System.Drawing.Point(3, 55);
             this.coursePanel.Name = "coursePanel";
             this.coursePanel.Size = new System.Drawing.Size(157, 46);
             this.coursePanel.TabIndex = 42;
@@ -991,7 +1012,7 @@
             this.passPanel.Controls.Add(this.passErrorLabel);
             this.passPanel.Controls.Add(this.passTextBox);
             this.passPanel.Controls.Add(this.passLabel);
-            this.passPanel.Location = new System.Drawing.Point(3, 55);
+            this.passPanel.Location = new System.Drawing.Point(166, 55);
             this.passPanel.Name = "passPanel";
             this.passPanel.Size = new System.Drawing.Size(144, 46);
             this.passPanel.TabIndex = 43;
@@ -1026,28 +1047,75 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(873, 447);
+            this.tabPage2.Size = new System.Drawing.Size(873, 486);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // firstPageFlowLayout
+            // idCardPanel1
             // 
-            this.firstPageFlowLayout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.firstPageFlowLayout.AutoSize = true;
-            this.firstPageFlowLayout.Controls.Add(this.personalInformationFlowLayoutPanel);
-            this.firstPageFlowLayout.Controls.Add(this.StudyFlowLayout);
-            this.firstPageFlowLayout.Location = new System.Drawing.Point(0, 0);
-            this.firstPageFlowLayout.Name = "firstPageFlowLayout";
-            this.firstPageFlowLayout.Size = new System.Drawing.Size(872, 441);
-            this.firstPageFlowLayout.TabIndex = 2;
+            this.idCardPanel1.AutoSize = true;
+            this.idCardPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.idCardPanel1.Content = "";
+            this.idCardPanel1.ContentWidth = 150;
+            this.idCardPanel1.Error = "";
+            this.idCardPanel1.ErrorID = 0;
+            this.idCardPanel1.Location = new System.Drawing.Point(316, 55);
+            this.idCardPanel1.Name = "idCardPanel1";
+            this.idCardPanel1.Size = new System.Drawing.Size(235, 39);
+            this.idCardPanel1.TabIndex = 44;
+            this.idCardPanel1.Title = "身份证号码：";
+            // 
+            // academicPanel1
+            // 
+            this.academicPanel1.AutoSize = true;
+            this.academicPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.academicPanel1.ContentWidth = 131;
+            this.academicPanel1.DataSource = new string[] {
+        "法学院",
+        "翻译学院",
+        "韩国学院",
+        "海洋学院",
+        "机电与信息工程学院",
+        "空间科学与物理学院",
+        "商学院",
+        "数学与统计学院",
+        "文化传播学院",
+        "艺术学院"};
+            this.academicPanel1.Editable = false;
+            this.academicPanel1.Error = "";
+            this.academicPanel1.Location = new System.Drawing.Point(557, 55);
+            this.academicPanel1.Name = "academicPanel1";
+            this.academicPanel1.Size = new System.Drawing.Size(184, 38);
+            this.academicPanel1.TabIndex = 45;
+            this.academicPanel1.Title = "学院：";
+            // 
+            // schemasPanel1
+            // 
+            this.schemasPanel1.Location = new System.Drawing.Point(3, 331);
+            this.schemasPanel1.Name = "schemasPanel1";
+            this.schemasPanel1.Size = new System.Drawing.Size(632, 142);
+            this.schemasPanel1.TabIndex = 2;
+            // 
+            // studentYearsPanel1
+            // 
+            this.studentYearsPanel1.AutoSize = true;
+            this.studentYearsPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.studentYearsPanel1.ContentWidth = 131;
+            this.studentYearsPanel1.DataSource = ((object)(resources.GetObject("studentYearsPanel1.DataSource")));
+            this.studentYearsPanel1.Editable = false;
+            this.studentYearsPanel1.Error = "";
+            this.studentYearsPanel1.Location = new System.Drawing.Point(641, 331);
+            this.studentYearsPanel1.Name = "studentYearsPanel1";
+            this.studentYearsPanel1.Size = new System.Drawing.Size(184, 38);
+            this.studentYearsPanel1.TabIndex = 3;
+            this.studentYearsPanel1.Title = "年制：";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 497);
+            this.ClientSize = new System.Drawing.Size(905, 536);
             this.Controls.Add(this.clientFromTabControl);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -1081,7 +1149,10 @@
             this.clientFromTabControl.ResumeLayout(false);
             this.firstPage.ResumeLayout(false);
             this.firstPage.PerformLayout();
+            this.firstPageFlowLayout.ResumeLayout(false);
+            this.firstPageFlowLayout.PerformLayout();
             this.StudyFlowLayout.ResumeLayout(false);
+            this.StudyFlowLayout.PerformLayout();
             this.professionSumPanel.ResumeLayout(false);
             this.professionSumPanel.PerformLayout();
             this.markPositionPanel.ResumeLayout(false);
@@ -1094,8 +1165,6 @@
             this.coursePanel.PerformLayout();
             this.passPanel.ResumeLayout(false);
             this.passPanel.PerformLayout();
-            this.firstPageFlowLayout.ResumeLayout(false);
-            this.firstPageFlowLayout.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1190,6 +1259,10 @@
         private System.Windows.Forms.TextBox passTextBox;
         private System.Windows.Forms.Label passLabel;
         private System.Windows.Forms.FlowLayoutPanel firstPageFlowLayout;
+        private GUI.IDCardPanel idCardPanel1;
+        private GUI.AcademicPanel academicPanel1;
+        private GUI.SchemasPanel schemasPanel1;
+        private GUI.StudentYearsPanel studentYearsPanel1;
 
     }
 }

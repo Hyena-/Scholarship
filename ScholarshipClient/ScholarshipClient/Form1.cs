@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ScholarshipClient.GUI;
 
 namespace ScholarshipClient
 {
@@ -36,7 +37,6 @@ namespace ScholarshipClient
             {
                 schoolErrorLabel.Text = "不能为空！";
                 schoolErrorLabel.Visible = true;
-
             }
             else if (!isValid)
             {
@@ -154,11 +154,11 @@ namespace ScholarshipClient
         {
             if (nationalComboBox.Text == "")
             {
-                nationalErrorLabel.Text = "不能为空！";
-                nationalErrorLabel.Visible = true;
+                this.notionalErrorLabel.Text = "不能为空！";
+                this.notionalErrorLabel.Visible = true;
             }
             else
-                nationalErrorLabel.Visible = false;
+                this.notionalErrorLabel.Visible = false;
         }
 
         private void enterYearComboBox_Validating(object sender, CancelEventArgs e)
@@ -326,12 +326,12 @@ namespace ScholarshipClient
 
         private void courseTextBox_Validating(object sender, CancelEventArgs e)
         {
-            if(courseTextBox.Text == "")
+            if (courseTextBox.Text == "")
             {
                 courseErrorLabel.Text = "不能为空！";
                 courseErrorLabel.Visible = true;
             }
-            else if (Convert.ToInt32(courseTextBox.Text) <= 0)
+            else if (Convert.ToInt32(passTextBox.Text) <= 0)
             {
                 courseErrorLabel.Text = "超出范围！";
                 courseErrorLabel.Visible = true;
@@ -346,6 +346,20 @@ namespace ScholarshipClient
         private void passTextBox_Validating(object sender, CancelEventArgs e)
         {
             //填入必修课数量后自动填充该栏与必修课数量相同
+            if (passTextBox.Text == "")
+            {
+                courseErrorLabel.Text = "不能为空！";
+                courseErrorLabel.Visible = true;
+            }
+            else if (Convert.ToInt32(passTextBox.Text) <= 0)
+            {
+                courseErrorLabel.Text = "超出范围！";
+                courseErrorLabel.Visible = true;
+            }
+            else
+            {
+                courseErrorLabel.Visible = false;
+            }
         }
 
     }
